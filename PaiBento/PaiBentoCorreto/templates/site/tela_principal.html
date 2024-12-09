@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Django</title>
+    <!-- Link do Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-rbsA2VBKQZ85K27IJ7c0X0svEY1zjEuA5Dk2rITB9jIBhK7x9CUG3AoXrmKX9gDk" 
+        crossorigin="anonymous">
+</head>
+<body>
+    <!-- Conteúdo vai aqui -->
+    <nav style="background-color: red;" class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Pai Bento de Aruanda</span>
+        </div>
+      </nav>
+
+      
+<style>
+    .myDiv {
+      border: 5px outset red;
+      background-color: lightblue;    
+      text-align: center;
+    }
+    .img-redimensionada {
+    width: 300px;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Corta partes extras, se necessário */
+}
+    </style>
+      
+<div class="myDiv">
+    <img src="{{produtos.arq.url}}" class="img-fluid" alt="Responsive image">
+    <h2>{{produtos.texto}}</h2>
+  </div>
+
+    <!-- Script do Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-k3Kj6yYQEL80twV1nOzjWZo5TyjUjE3ejZAB8m3KyrRQbPCtMAq/5F13IccQdYzo" 
+        crossorigin="anonymous"></script>
+</body>
+<div class="myDiv">
+    <h2>Entre em contato</h2>
+  </div>
+</html>
